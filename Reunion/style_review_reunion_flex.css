@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap');
+font-family: 'Amatic SC', Arial ;
+font-family: 'Walter Turncoat', ;
+font-family: 'East Sea Dokdo', ;
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* GENERAL */
+
+body{
+  background-color:yellow;
+  color: #333;
+  font-family: 'Comfortaa', Arial ;
+  font-size: 100%;
+  text-align: justify;
+  line-height : 1.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrap {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1{
+    font-family: 'Amatic SC', Arial ;
+    font-size: 3rem;
+    color: white;
+    padding: 0em;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:rgba(77, 196, 220, 1);
+    margin : 0 auto 0 auto;
+    padding: 2.1em;
+    text-align: center;
+}
+
+h3{
+    font-family: ;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0.4em;
+     text-shadow: 2px 2px 10px rgb(72, 110, 129);
+}
+
+h4{
+   color: #fff;
+  font-size: 1.1rem; 
+    margin: 1% 1%;
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    margin-bottom: 0.7em;   
+}
+
+img, video{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* CLASS */
+.col_1 {
+  width: 8.33%;}
+.col_2 {
+  width: 16.66%;}
+.col_3 {
+  width: 25%;}
+.col_4 {
+  width: 33.33%;}
+.col_5 {
+  width: 41.66%;}
+.col_6 {
+  width: 50%;}
+.col_7 {
+    width: 58.33%;}
+.col_8 {
+    width: 66.66%;}
+.col_9 {
+    width: 75%;}
+.col_10 {
+    width: 83.33%;}
+.col_11 {
+    width: 91.66%;}
+.col_12 {
+    width: 100%;}
+
+.flex{
+    display: flex;  
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.en_cours{
+   border-bottom: 1px solid rgba(77, 196, 220, 1); 
+    padding-bottom: 0.1em;
+}
+.en_cours:hover{
+   border-bottom: 1px solid rgb(72, 110, 129); 
+    padding-bottom: 0.1em;
+}
+
+
+/* STRUCTURE */
+
+nav{
+    position: fixed;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: pink;
+    height: 4vw;
+    left:0;
+    right: 0;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    box-shadow: 0px 1px 6px 0.2px rgb(72, 110, 129);;
+    z-index: 10;
+}
+
+#nav_logo{
+    width: 13%;
+    height: auto;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+nav a:link{
+    color: rgba(77, 196, 220, 1);
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+nav a:hover{
+    color: rgb(72, 110, 129);
+    border-bottom: 1px solid rgb(72, 110, 129); 
+    padding-bottom: 0.1em;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: white;
+}
+
+video{
+    margin-top: 4.5vw;
+    z-index: 1;
+}
+
+figcaption{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0em;
+    padding: 0em;
+    color: white;
+    text-shadow: 2px 2px 10px rgb(72, 110, 129);
+    z-index: 2;
+}
+figcaption p{
+    font-size: 1em;
+}
+
+#actu_une{
+    color: rgba(77, 196, 220, 1);
+    text-shadow:3px 3px 8px rgb(72, 110, 129); 
+    margin: 0;
+    padding: 1.3em; 0em;
+}
+
+#zoom_et_actus{
+  background-color: aquamarine;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 4.4em auto;
+}
+
+#zoom{
+    background-color: rgba(77, 196, 220, 1);
+}
+#zoom article{
+    margin: 0% 0%;
+    padding:3em;
+    color: white;
+}
+#zoom aside{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0s;
+    overflow: hidden;
+    background-color: #fff;
+}
+#zoom aside img{
+     vertical-align: bottom;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out 0s;
+       position: relative;
+}
+#zoom aside img:hover{
+     vertical-align: bottom;
+    transform: scale(1.10);
+    opacity: 0.5;
+    z-index: 1;
+}
+#zoom h3{
+    color: white;
+    text-shadow:2px 2px 10px rgb(72, 110, 129); 
+    font-size: 2.3em; 
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    width: 100%;
+    line-height: 1.2em;
+    text-align: center;
+}
+#zoom_article p{
+   font-size: 1em;
+}
+#zoom a:link{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+}
+#zoom a:hover{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: white;
+}
+#zoom span {
+    visibility: hidden;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    background-color: rgba(77, 196, 220, 0.8);
+} 
+#crazy_adventures:hover span{
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+     z-index: 2;
+}
+
+#actus
+{   
+    margin: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: rgba(72, 110, 129, 1);
+}
+#actus article{
+    color: #fff;
+    overflow: hidden;
+    vertical-align: bottom;   
+    transform: scale(1);
+    transition: all 0.5s ease-in-out 0s;
+}
+#actus article:hover{
+    opacity: 0.5;
+    overflow: hidden;
+    vertical-align: bottom;   
+    transform: scale(1.10);
+}
+#actus h4{
+    color:white;
+    margin: 0;
+    padding: 1em;
+} 
+#actus a{
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#actus img{
+     text-decoration: none;
+     color: #fff;
+     position: relative;
+}   
+ 
+#actus a:hover img{
+     text-decoration: none;
+     color: #fff;
+    z-index: 1;
+}
+
+#actus span {
+    visibility: hidden;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    background-color: rgba(77, 196, 220, 0.8);
+    padding: 0;
+    z-index: 2;
+}
+ 
+#oiseaux:hover span{
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+}
+#champ_assiette:hover span{
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+}
+#danses_reunionnaises:hover span{
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+}
+
+#vacances_reves{
+    position: relative;
+    width: 100%;
+    margin: 0em auto 0em auto;
+}
+
+#vacances_reves h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.1em;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(72, 110, 129); 
+}
+
+#vacances_reves h2 a:link{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255,0.2);
+    padding: 0.8em;
+    border: thin solid white;
+    border-radius : 3px 3px;
+}
+
+#vacances_reves h2 a:hover{
+    text-decoration: none;
+    box-shadow: 2px 2px 10px rgb(72, 110, 129);
+    transform: scale(1.7);
+}
+
+#activites{ 
+    width: 90%;
+  margin: 0 auto 4.4em auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+#activites article{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+}
+#activites img{
+    vertical-align: middle;
+    margin:0;
+    padding:0;
+    z-index: 1;
+    border-radius: 5px;
+}
+#activites img:hover{
+   opacity: 0.5;
+}
+#activites h3{
+    font-family: 'Amatic SC', Arial ;
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 10px rgb(72, 110, 129);
+    margin: 0;
+    padding: 0;
+    z-index: 7;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#parallax{
+    background: url(images/waterfall_trois_redim.jpg) no-repeat center fixed;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 500px;
+}
+
+footer{
+    align-content: center;
+    align-items: baseline;
+    margin: 0;
+    padding-top: 2em;
+}
+
+footer section{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.2em;
+    justify-content: space-between;
+}
+
+#footer_logo{
+    margin-left: 3em;
+}
+footer article{
+    margin: 0em 1.3em;
+}
+footer h4{
+    color: rgba(77, 196, 220, 1);
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 0.3em;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    font-size: 1em;
+}
+footer a:link{
+    text-decoration: none;
+    text-align: left;
+    color: rgba(77, 196, 220, 1);
+}
+footer a:hover{
+    text-decoration: none;
+    text-align: left;
+    color: rgba(77, 196, 220, 1);
+    font-weight: 700;
+}
+#logo_footer{
+    margin: 0;
+    padding: 0;
+}
+
+#reseauxsociaux img{
+   width: 10%;
+}
+
+footer li{
+    font-size: 1em;
+}
+
+#copyright{
+   color: #fff;
+    background-color: rgba(77, 196, 220, 1);
+    text-align: center;
+    margin: 0;
+    padding: 0.3em;
+    
+}
+
+/*MEDIA QUERIES TABLETTE ET ORDINATEURS PORTABLES */
+    
+    
+@media screen and (max-width: 992px){
+  
+
+
+/*MEDIA QUERIES*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+@media only screen and (orientation: landscape) {
+    
+}
+
